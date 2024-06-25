@@ -20,15 +20,26 @@ public class Main {
             System.out.println("Если скорость авто " + speed + ", то нужно выплатить штраф");
         }
         int age2 = 23;
-        if (age2 >=2 && age2 <=6) {
+        if (age2 >= 2 && age2 <= 6) {
             System.out.println("Если человеку " + age2 + " лет, то он должен ходить в детский сад");
-        }
-        else if (age2 >=7 && age2 <=17){
+        } else if (age2 >= 7 && age2 <= 17) {
             System.out.println("Если человеку " + age2 + " лет, то он должен ходить в школу");
-        } else if (age2 >=18 && age2 <=24) {
+        } else if (age2 >= 18 && age2 <= 24) {
             System.out.println("Если человеку " + age2 + " лет, то он должен ходить в институт");
         } else if (age > 24) {
             System.out.println("Если человеку " + age2 + " лет, то он должен ходить на работу");
+        }
+        int ageChild = 12;
+        boolean parent = true;
+        if (ageChild < 5) {
+            System.out.println("Если возраст ребёнка " + ageChild + " года, то кататься на аттракционе нельзя");
+        } else if (ageChild >=5 && ageChild <14 && parent == true) {
+            System.out.println("Если возраст ребёнка " + ageChild + " лет, то кататься на аттракционе можно только в сопровождении родителя. Родитель присутствует, кататься на аттракционе можно");
+        }
+        else if (ageChild >=5 && ageChild <14 && parent == false) {
+            System.out.println("Если возраст ребёнка " + ageChild + " лет, то на аттракционе можно только в сопровождении родителя. Родитель не присутствует, кататься на аттракционе нельзя");
+        }else if (ageChild > 14) {
+            System.out.println("Если возраст ребёнка " + ageChild + " лет, то кататься на аттракционе можно без сопровождения родителя");
         }
     }
     }
