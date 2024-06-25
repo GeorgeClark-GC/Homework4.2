@@ -41,5 +41,17 @@ public class Main {
         }else if (ageChild > 14) {
             System.out.println("Если возраст ребёнка " + ageChild + " лет, то кататься на аттракционе можно без сопровождения родителя");
         }
+        int place = 102;
+        if (place < 102 && place < 60)
+        {
+            System.out.println("В вагоне есть сидячие места");
+        }
+        else if (place < 102 && place >=60)
+        {
+            System.out.println("В вагоне есть стоячие места");
+        }
+        else {
+            System.out.println("В вагоне нет мест");
+        }
     }
     }
