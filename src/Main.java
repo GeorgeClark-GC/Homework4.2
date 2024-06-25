@@ -53,5 +53,18 @@ public class Main {
         else {
             System.out.println("В вагоне нет мест");
         }
+        int one = 12;
+        int two = 28;
+        int three = 4;
+        if (one >= two && one >= three)
+        {
+            System.out.println("Первое число больше");
+        }
+        else if (two >= one && two >= three) {
+            System.out.println("Второе число больше");
+        }
+        else {
+            System.out.println("Третье число больше");
+        }
     }
     }
