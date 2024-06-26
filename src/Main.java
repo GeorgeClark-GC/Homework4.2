@@ -13,11 +13,11 @@ public class Main {
         } else {
             System.out.println("На улице холодно, " + temperature + " градусов, нужно выйти в шапке");
         }
-        int speed = 47;
+        int speed = 48;
         if (speed <= 60) {
-            System.out.println("Если скорость авто " + speed + ", то можно ездить спокойно");
+            System.out.println("Если скорость авто " + speed + " км/ч, то можно ездить спокойно, скоростной режим в 60 км/ч не нарушен");
         } else {
-            System.out.println("Если скорость авто " + speed + ", то нужно выплатить штраф");
+            System.out.println("Если скорость авто " + speed + " км/ч, то нужно выплатить штраф, скоростной режим в 60 км/ч нарушен");
         }
         int age2 = 23;
         if (age2 >= 2 && age2 <= 6) {
@@ -26,7 +26,7 @@ public class Main {
             System.out.println("Если человеку " + age2 + " лет, то он должен ходить в школу");
         } else if (age2 >= 18 && age2 <= 24) {
             System.out.println("Если человеку " + age2 + " лет, то он должен ходить в институт");
-        } else if (age > 24) {
+        } else if (age2 > 24) {
             System.out.println("Если человеку " + age2 + " лет, то он должен ходить на работу");
         }
         int ageChild = 12;
@@ -41,16 +41,18 @@ public class Main {
         }else if (ageChild > 14) {
             System.out.println("Если возраст ребёнка " + ageChild + " лет, то кататься на аттракционе можно без сопровождения родителя");
         }
-        int place = 102;
-        if (place < 102 && place < 60)
+        int sittingPlace = 60;
+        int standingPlace = 23;
+        if (standingPlace < 42 && sittingPlace < 60)
         {
-            System.out.println("В вагоне есть сидячие места");
+            System.out.println("В вагоне есть сидячие места и стоячие места");
         }
-        else if (place < 102 && place >=60)
+        else if (standingPlace < 42 && sittingPlace >= 60)
         {
             System.out.println("В вагоне есть стоячие места");
-        }
-        else {
+        } else if (standingPlace >= 42 && sittingPlace < 60) {
+            System.out.println("В вагоне есть сидячие места");
+        } else if (standingPlace >= 42 && sittingPlace >= 60){
             System.out.println("В вагоне нет мест");
         }
         int one = 12;
